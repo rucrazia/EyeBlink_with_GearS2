@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:keepScreenOn="true">
+
+  <com.hyechon.etrackermv.camera.CameraSourcePreview
+      android:id="@+id/preview"
+      android:layout_width="1dp"
+      android:layout_height="1dp">
+
+    <com.hyechon.etrackermv.camera.GraphicOverlay
+        android:id="@+id/faceOverlay"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+  </com.hyechon.etrackermv.camera.CameraSourcePreview>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/count_blink"
+      android:textSize="40sp"
+      android:textColor="#000000"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true" />
+
+  <WebView
+      android:id="@+id/webview"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_above="@+id/count_blink"
+      android:layout_below="@+id/preview" />
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentStart="true"
+      android:layout_alignTop="@+id/count_blink">
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검사 시작"
+        android:textColor="#aaaaaa"
+        android:id="@+id/start_button"
+        android:layout_alignTop="@+id/reset_button"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff" />
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textColor="#aaaaaa"
+        android:id="@+id/google_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/eye2"
+        android:background="#ffffff" />
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Setting"
+        android:textColor="#aaaaaa"
+        android:id="@+id/reset_button"
+        android:layout_alignTop="@+id/count_blink"
+        android:layout_alignEnd="@+id/count_blink"
+        android:allowUndo="false"
+        android:background="#ffffff" />
+
+  </LinearLayout>
+
+  <!--<com.google.android.youtube.player.YouTubePlayerView
+      android:id="@+id/youtube_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>

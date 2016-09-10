@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Etrackermv</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+    <!-- BLE-->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+    <!-- Tizen -->
+    <string name="hello_world">android_connected</string>
+    <string name="ConnectionAcceptedMsg">Service Connection from HelloAccessory(C) has been accepted.</string>
+    <string name="ConnectionEstablishedMsg">Service Connection with HelloAccessory(C) has been established.</string>
+    <string name="ConnectionTerminateddMsg">Service Connection with HelloAccessory(C) has been terminated.</string>
+    <string name="ConnectionAlreadyExist">Service Connection has already been existed!!!</string>
+    <string name="ConnectionAlreadyDisconnected">Service Connection has already been disconnected!!!</string>
+
+    <string name="ConnectionFailure">Service Connection Failure</string>
+    <string name="NoPeersFound">No peers have been found!!!</string>
+    <string name="buttonConnect">Connect</string>
+    <string name="buttonDisconnect">Disconnect</string>
+    <string name="buttonSend">Send</string>
+
+</resources>

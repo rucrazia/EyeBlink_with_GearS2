@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+  <com.hyechon.etrackermv.camera.CameraSourcePreview
+      android:id="@+id/preview"
+      android:layout_width="1dp"
+      android:layout_height="1dp">
+
+    <com.hyechon.etrackermv.camera.GraphicOverlay
+        android:id="@+id/faceOverlay"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+  </com.hyechon.etrackermv.camera.CameraSourcePreview>
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Start eye tracking"
+      android:id="@+id/start_button"
+      android:layout_gravity="center_vertical"
+      android:layout_alignTop="@+id/count_blink"
+      android:layout_toEndOf="@+id/preview" />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="reset counting"
+      android:id="@+id/reset_button"
+      android:layout_gravity="center_vertical"
+      android:layout_alignTop="@+id/start_button"
+      android:layout_centerHorizontal="true" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="blink_count"
+      android:id="@+id/count_blink"
+      android:textSize="40sp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true" />
+
+  <com.google.android.youtube.player.YouTubePlayerView
+      android:id="@+id/youtube_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+</RelativeLayout>
